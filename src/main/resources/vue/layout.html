@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kotlin Admin Template</title>
+    <meta charset="utf8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <link href="webjars/roboto-fontface/0.10.0/css/roboto/roboto-fontface.css" rel="stylesheet">
+    <link href="webjars/mdi__font/5.0.45/css/materialdesignicons.css" rel="stylesheet">
+    <link href="webjars/vuetify/2.3.15/dist/vuetify.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <script src="webjars/vue/2.6.10/dist/vue.js"></script>
+    <script src="webjars/vuetify/2.3.15/dist/vuetify.js"></script>
+    @componentRegistration
+</head>
+
+<body>
+    <main id="main-vue">
+        @routeComponent
+    </main>
+    <script>
+        const vue = new Vue({
+            el: "#main-vue",
+            vuetify: new Vuetify(),
+        })
+    </script>
+</body>
+
+</html>
